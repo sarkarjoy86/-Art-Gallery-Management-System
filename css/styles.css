@@ -1,0 +1,253 @@
+/* General Styling */
+body {
+    background: linear-gradient(to bottom right, #0056b3, #00bcd4); /* Gradient background */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Main Wrapper */
+.main-wrapper {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Container Styling */
+.container {
+    max-width: 200px;
+    width: 50%;
+    height: 50%;
+    background: rgba(255, 255, 255, 0.95); /* Semi-transparent white */
+    color: #333; /* Dark text for readability */
+    padding: 30px;
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3); /* Soft shadow */
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.container:hover {
+    transform: translateY(-5px); /* Lift effect */
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3); /* Deeper shadow on hover */
+}
+
+/* Headings */
+h1, h2 {
+    color: #0056b3; /* Primary blue */
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+/* Form Styling */
+form {
+    margin-top: 20px;
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+}
+
+.form-group input:focus {
+    border-color: #007bff;
+    box-shadow: 0px 0px 8px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+.form-group .icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #007bff;
+}
+
+/* Buttons */
+button, .btn {
+    font-size: 18px;
+    padding: 12px 20px;
+    border-radius: 8px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    width: 50%; /* Full-width buttons */
+}
+
+.btn-primary {
+    background: linear-gradient(to right, #6a11cb, #2575fc); /* Gradient button */
+    color: white;
+    border: none;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(to right, #5a0fb8, #2068dc);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background-color: #565e64;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    color: white;
+}
+
+.btn-danger:hover {
+    background-color: #b02a37;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Social Sign-In Section */
+.social-signin {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.social-signin p {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.social-signin .social-icons a {
+    margin: 0 10px;
+    color: #0056b3;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.social-signin .social-icons a:hover {
+    color: #003f7f;
+}
+
+/* Artwork Box Styling */
+.artwork-box {
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent box */
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.artwork-box:hover {
+    transform: scale(1.03); /* Slight zoom effect */
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.artwork-box h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.artwork-box p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Footer */
+/* Footer Styling */
+footer {
+    background-color: #cde2f9; /* Footer background color */
+    color: #fff; /* Footer text color */
+    text-align: center;
+    padding: 10px 0; /* Spacing */
+    font-size: 14px;
+    position: fixed; /* Sticks the footer to the bottom */
+    bottom: 0;
+    left: 0;
+    width: 100%; /* Full-width footer */
+    box-shadow: 0px -2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+/* Login Container Styling */
+.login-container {
+    max-width: 300px !important; /* Smaller width */
+    width: 90%;
+    background: rgba(255, 255, 255, 0.95); /* Semi-transparent white */
+    color: #333; /* Dark text */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3); /* Soft shadow */
+    text-align: center;
+    margin: 20px auto; /* Center on the page */
+}
+
+/* Sign-Up Container Styling */
+.signup-container {
+    max-width: 300px; /* Smaller width */
+    width: 90%;
+    background: rgba(255, 255, 255, 0.95); /* Semi-transparent white */
+    color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    margin: 20px auto;
+}
+
+/* Input Fields */
+.login-container input,
+.signup-container input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Buttons for Login and Sign-Up */
+.login-container button,
+.signup-container button {
+    font-size: 14px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    width: 100%;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.login-container button:hover,
+.signup-container button:hover {
+    background: linear-gradient(to right, #5a0fb8, #2068dc);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}

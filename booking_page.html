@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Exhibition</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+    <style>
+        /* General Styling */
+        body {
+            background: linear-gradient(to bottom right, #0056b3, #00bcd4); /* Gradient background */
+            color: #fff;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 90%;
+            background: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        h2 {
+            color: #0056b3;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+
+        .exhibition-card {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .exhibition-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn-book {
+            background: linear-gradient(to right, #6a11cb, #2575fc); /* Gradient for book button */
+            color: white;
+            border: none;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .btn-book:hover {
+            background: linear-gradient(to right, #5a0fb8, #2068dc);
+            box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            margin-top: 20px;
+            font-size: 0.9rem;
+            color: #ccc;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Available Exhibitions</h2>
+
+        <!-- Exhibition 1 -->
+        <div class="exhibition-card">
+            <h4>Modern Art Exhibition</h4>
+            <p><strong>Location:</strong> Gallery Hall 1</p>
+            <p><strong>Start Date:</strong> 2025-02-01</p>
+            <p><strong>End Date:</strong> 2025-02-15</p>
+            <button class="btn-book">Book Now</button>
+        </div>
+
+        <!-- Exhibition 2 -->
+        <div class="exhibition-card">
+            <h4>Photography Exhibition</h4>
+            <p><strong>Location:</strong> Gallery Hall 2</p>
+            <p><strong>Start Date:</strong> 2025-03-01</p>
+            <p><strong>End Date:</strong> 2025-03-20</p>
+            <button class="btn-book">Book Now</button>
+        </div>
+
+        <!-- Exhibition 3 -->
+        <div class="exhibition-card">
+            <h4>Classic Art Exhibition</h4>
+            <p><strong>Location:</strong> Gallery Hall 3</p>
+            <p><strong>Start Date:</strong> 2025-04-01</p>
+            <p><strong>End Date:</strong> 2025-04-30</p>
+            <button class="btn-book">Book Now</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Art Gallery Management. All rights reserved.</p>
+    </footer>
+    <script src="js/booking_page.js"></script> 
+    <script src="js/booking_interaction.js"></script>
+    <script src="js/exhibition_booking.js"></script>
+</body>
+</html>
